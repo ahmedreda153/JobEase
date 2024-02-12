@@ -1,0 +1,116 @@
+@media screen and (min-width: 600px) {
+    .feedback-form {
+        max-width: 700px;
+        margin: 2rem auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+        font-size: 16px;
+        background-color: #DDE6ED;
+        /* font-family: Roboto, sans-serif; */
+    }
+
+    .feedback-rating {
+        display: flex;
+        flex-direction: raw;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* margin-bottom: 20px; */
+        flex-wrap: wrap;
+    }
+
+    .feedback-rating div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .feedback-form {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+        font-size: 16px;
+        background-color: #DDE6ED;
+        /*font-family: Roboto, sans-serif; */
+
+    }
+
+    .feedback-rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* margin-bottom: 20px; */
+        flex-wrap: wrap;
+    }
+
+    .feedback-rating div {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        /* margin-bottom: 20px; */
+        flex-wrap: wrap;
+    }
+
+    .drawer {
+        display: block;
+    }
+}
+
+
+.feedback-form h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 25px;
+    background-color: #006699;
+    border-style: ridge;
+
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feedback-form textarea {
+    height: 150px;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #006699;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/* Radio button group */
+
+
+.feedback-rating input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.feedback-rating label {
+    cursor: pointer;
+}

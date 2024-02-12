@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/feedback_form.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="drawer"><i class="fa fa-bars"></i></label>
+        <h1>JobEase</h1>
+        <ul id="d">
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="services.html">Categories</a></li>
+            <li><a class="link" href="#">Orders</a></li>
+            <li><a class="link" href="feedback_form.html">FeedBack</a></li>
+        </ul>
+    </nav>
+    <div class="feedback-form">
+        <h1>We love to hear your feedback
+            <link rel="stylesheet" href="index.css">
+        </h1>
+
+
+        <form action="/feedback" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" name="name">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <label for="Phone number">Phone number</label>
+            <input type="Phone number" name="number">
+            <label for="feedback">Feedback</label>
+            <textarea name="feedback"></textarea>
+
+            <div class="feedback-rating">
+                <div>
+                    <input type="radio" name="satisfaction" value="very_satisfied">
+                    <h3>Very satisfied</h3>
+                </div>
+                <div>
+                    <input type="radio" name="satisfaction" value="satisfied">
+                    <h3>Satisfied</h3>
+                </div>
+                <div>
+                    <input type="radio" name="satisfaction" value="neutral">
+                    <h3>Neutral</h3>
+                </div>
+                <div>
+                    <input type="radio" name="satisfaction" value="dissatisfied">
+                    <h3>Dissatisfied</h3>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <ul class="footer-item">
+            <li><strong class="head">JobEase</strong></li>
+            <li>Email: JobEase@gmail.com</li>
+            <li><i class="fa fa-map-marker" style="font-size:25px"></i>&nbsp;Location: Egypt, Cairo</li>
+        </ul>
+        <ul class="footer-item">
+            <li><Strong class="head">Social Media</Strong></li>
+            <li><a class="link" href="#"><i class="fa fa-facebook-f" style="font-size:25px"></i>&nbsp;FaceBook</a></li>
+            <li><a class="link" href="#"><i class="fa fa-instagram" style="font-size:25px"></i>&nbsp;Instagram</a></li>
+        </ul>
+        <p class="copy-rights-paragraph">
+            <strong>&copy; 2023 JobEase. All rights reserved.</strong>
+        </p>
+    </footer>
+</body>
+
+</html>

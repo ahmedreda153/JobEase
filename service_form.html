@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/service_form.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="drawer"><i class="fa fa-bars"></i></label>
+        <h1>JobEase</h1>
+        <ul id="d">
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="services.html">Categories</a></li>
+            <li><a class="link" href="#">Orders</a></li>
+            <li><a class="link" href="feedback_form.html">FeedBack</a></li>
+        </ul>
+    </nav>
+    <section class="body">
+        <h2>Service Form</h2>
+        <div class="form-img">
+            <form action="category.html">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+            <div class="image">
+                <img id="service-photo" alt="">
+                <h2 id="service-title"></h2>
+                <p id="service-desc"></p>
+            </div>    
+        </div>
+    </section>
+    <footer>
+        <ul class="footer-item">
+            <li><strong class="head">JobEase</strong></li>
+            <li>Email: JobEase@gmail.com</li>
+            <li><i class="fa fa-map-marker" style="font-size:25px"></i>&nbsp;Location: Egypt, Cairo</li>
+        </ul>
+        <ul class="footer-item">
+            <li><Strong class="head">Social Media</Strong></li>
+            <li><a class="link" href="#"><i class="fa fa-facebook-f" style="font-size:25px"></i>&nbsp;FaceBook</a></li>
+            <li><a class="link" href="#"><i class="fa fa-instagram" style="font-size:25px"></i>&nbsp;Instagram</a></li>
+        </ul>
+        <p class="copy-rights-paragraph">
+            <strong>&copy; 2023 JobEase. All rights reserved.</strong>
+        </p>
+    </footer>
+    <script src="./assets/js/form.js"></script>
+</body>
+
+</html>
