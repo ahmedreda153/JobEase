@@ -8,55 +8,37 @@ body{
     padding: 0px;
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
-    height: 100%;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
 
-.main{
-    width: 100%;
-    background-color: #DDE6ED;
-}
-
-
-.description{
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
+.description-container {
     background-color: #526D82;
-    height: 50vh;
-    width: 100%;
 }
 
-.right{
-    height: 50vh;
-    width: 35%;
+.description {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    font-size: 1.2em;
-    margin-left: 13%;
-    margin-right: 2%;
-}
-.strong{
-    font-size: 2.2em;
-    display: inline;
-}
-.left{
-    height: 30vh;
-    width: 35%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 13%;
-    margin-left: 2%;
+    padding: 2rem 0;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.n{
-    font-size: 1.1em;
+.description h2 {
+    font-size: 2.5rem;
+}
+
+.lower {
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.lower .left {
+    width: 50%;
+}
+
+.lower .right {
+    width: 50%;
 }
 
 .left>a:hover{
@@ -64,42 +46,34 @@ body{
     color:#27374D;
 }
 
-
 .offer{
-    height: 85vh;
-    width: 100%;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: gray;
 }
 
 .txt{
-    margin-top: 3%;
-    height: 35%;
     width: 70%;
     font-size: 1.1em;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
 
-.cards{
-    height: 62%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.txt h3, .vision h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-img{
-    width: 230px;
-    height: 290px;
-    border-radius: 3px;
+.cards{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -108,6 +82,7 @@ img{
     left: 0;
     width: 230px;
     height: 290px;
+    margin: 1rem;
     border-radius: 4px;
     transform-style: preserve-3d;
     transition: all 0.8s ease;
@@ -119,20 +94,20 @@ img{
 }
 
 .front{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    backface-visibility: hidden;
     overflow: hidden;
 }
 
 .back{
     position: absolute;
     top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.3rem;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -144,32 +119,40 @@ img{
     transform: rotateY(180deg);
 }
 
+.back h1{
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+}
+
+.back p{
+    font-size: 1.2em;
+}
 
 .vision{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #DDE6ED;
+    font-size: 1.1em;
+}
+
+.vision p, .vision h3{
+    margin: 0 auto;
     width: 70%;
-    height: 40vh;
-    margin-right: 15%;
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
 }
 
 .explore{
     background-color: #27374D;
     width: 100%;
-    height: 25vh;
+    padding: 2rem 1rem 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .explore>h1{
     color: white;
     font-size: 2.2em;
-    display: inline;
 }
 
 .btn{
@@ -190,78 +173,77 @@ img{
 }
 
 
-
-
 /* -------------------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 1110px) {
-    .description{
-        width: 100%;
-        height: 80vh;
+@media (max-width: 768px) {
+    .description {
+        width: 90%;
+    }
+
+    .upper {
+        text-align: center;
+    }
+
+    .lower {
         flex-direction: column;
-        justify-content: start;
         align-items: center;
     }
-    .right{
-        margin: 0%;
-        width: 70%;
-        height: 35%;
-        margin-top: 2em;
+
+    .lower .left {
+        width: 80%;
+        margin-bottom: 0.5rem;
     }
-    .left{
-        margin: 0%;
-        width: 70%;
-        height: 35%;
+
+    .lower .right {
+        width: 80%;
     }
-    .offer{
-        height: 120vh;
-    }
-    .txt{
-        margin-top: 1em;
-    }
+
     .cards{
         margin-top: 1em;
     }
+
     .card{
         height: 230px;
         width: 170px;
     }
+
     .back{
         font-size: x-small;
     }
-    .vision{
-        height: 70vh;
-    }
-    .explore{
-        height: 40vh;
-        flex-direction: column;
+
+    .vision p, .vision h3 {
+        width: 80%;
     }
 }
 
-@media (max-width: 630px){
-    .right{
-        margin: 0%;
-        margin-top: 2em;
-        font-size: 1em;
+@media (max-width: 576px){
+    .lower .left {
+        width: 90%;
     }
-    .left{
-        margin: 0%;
-        font-size: 0.9em;
+
+    .lower .right {
+        width: 90%;
     }
-    .offer{
-        height: 160vh;
+
+    .txt {
+        width: 80%;
     }
-    .txt{
-        font-size: 0.9em;
-    }
+
     .card{
         height: 200px;
         width: 140px;
     }
-    .vision{
-        font-size: 0.9em;
+
+    .vision p, .vision h3 {
+        width: 90%;
     }
+
     .explore>h1{
-        font-size: 1.5em;
+        font-size: 2em;
+        margin-right: 0.5rem;
+    }
+
+    .explore a {
+        margin-top: 1rem;
     }
 }

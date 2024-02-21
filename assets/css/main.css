@@ -9,9 +9,8 @@ a{
 }
 
 nav {
-    height: 65px;
     width: 100%;
-    padding: 0 5rem;
+    padding: 1rem 5rem;
     background-color: #27374D;
     color: white;
     display: flex;
@@ -27,7 +26,6 @@ nav h1 {
 nav ul {
     list-style-type: none;
     float: right;
-    margin-right: 20px;
 }
 
 nav ul li {
@@ -53,7 +51,6 @@ nav ul li {
     cursor: pointer;
     display: none;
     line-height: 60px;
-    margin-right: 40px;
 }
 
 #check{
@@ -68,10 +65,16 @@ footer{
     align-items: center;
     justify-content: space-around;
     color: white;
-    padding: 3rem;
+    padding: 2rem;
 }
 
-@media (max-width: 630px){
+@media (max-width: 768px){
+    nav {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 576px){
     .drawer{
         display: block;
     }

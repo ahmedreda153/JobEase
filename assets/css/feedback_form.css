@@ -1,6 +1,6 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .feedback-form {
-        max-width: 700px;
+        width: 70%;
         margin: 2rem auto;
         padding: 20px;
         border: 1px solid #ccc;
@@ -8,7 +8,6 @@
         box-shadow: 0px 0px 5px #ccc;
         font-size: 16px;
         background-color: #DDE6ED;
-        /* font-family: Roboto, sans-serif; */
     }
 
     .feedback-rating {
@@ -16,7 +15,6 @@
         flex-direction: raw;
         justify-content: space-between;
         align-items: flex-start;
-        /* margin-bottom: 20px; */
         flex-wrap: wrap;
     }
 
@@ -30,10 +28,10 @@
     }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
     .feedback-form {
-        max-width: 700px;
-        margin: 0 auto;
+        width: 90%;
+        margin: 2rem auto;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -49,8 +47,11 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        /* margin-bottom: 20px; */
         flex-wrap: wrap;
+    }
+    
+    .feedback-rating div {
+        margin-bottom: 0.5rem;
     }
 
     .feedback-rating div {
@@ -58,7 +59,6 @@
         flex-direction: row;
         justify-content: start;
         align-items: center;
-        /* margin-bottom: 20px; */
         flex-wrap: wrap;
     }
 
@@ -74,9 +74,9 @@
     font-weight: 600;
     color: #ffffff;
     padding: 25px;
-    background-color: #006699;
+    background-color: #526D82;
     border-style: ridge;
-
+    margin-bottom: 1rem;
 }
 
 .feedback-form input,
@@ -94,7 +94,7 @@
 }
 
 .feedback-form input[type="submit"] {
-    background-color: #006699;
+    background-color: #526D82;
     color: #fff;
     padding: 10px;
     cursor: pointer;
