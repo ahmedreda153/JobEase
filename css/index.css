@@ -8,13 +8,10 @@ body{
     padding: 0px;
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
+    background-color: #526d82;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
-.description-container {
-    background-color: #526D82;
-}
 
 .description {
     display: flex;
@@ -46,12 +43,23 @@ body{
     color:#27374D;
 }
 
+.about-vision-link {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+
+.about-vision-link:hover {
+    color: whitesmoke;
+}
+
 .offer{
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background-color: #929292;
 }
 
 .txt{
@@ -131,8 +139,8 @@ body{
 .vision{
     width: 100%;
     padding: 4rem 0;
-    background-color: #DDE6ED;
     font-size: 1.1em;
+    background-color: #DDE6ED;
 }
 
 .vision p, .vision h3{

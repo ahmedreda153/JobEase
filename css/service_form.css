@@ -16,12 +16,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin: 2rem auto;
+    margin: 4rem auto 3rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .body h2 {
     color: #fff;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     font-size: 2.5rem;
 }
 
@@ -87,9 +88,8 @@ input[type="submit"] {
 }
 
 .form-img .image img {
-    width: 100%;
+    width: 60%;
     border-radius: 15px;
-    margin: 1rem 0;
 }
 
 #service-title {
@@ -100,6 +100,18 @@ input[type="submit"] {
     color: #fff;
     margin: 1rem 0;
     text-align: center;
+}
+
+@media (max-width: 1200px){
+    .form-img .image img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .form-img .image img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -120,7 +132,7 @@ input[type="submit"] {
     }
 
     .form-img .image img {
-        width: 80%;
+        width: 85%;
     }
 }
 
@@ -129,33 +141,16 @@ input[type="submit"] {
         flex-direction: column-reverse;
     }
 
+    .form-img .image img {
+        width: 70%;
+        margin-top: 1rem;
+    }
+
     .image {
         margin-bottom: 1rem;
     }
 
     .image p {
-        width: 80%;
-    }
-}
-
-@media (max-width: 426px) {
-    .body {
-        width: 90%;
-        height: 90%;
-        overflow: scroll;
-        display: block;
-        text-align: center;
-    }
-
-    .form-img {
-        flex-direction: column-reverse;
-    }
-
-    .form-img .image, .form-img form {
-        width: 100%;
-    }
-
-    .form-img .image img, form input, form textarea, input[type="submit"], .form-img .image p {
         width: 80%;
     }
 }
