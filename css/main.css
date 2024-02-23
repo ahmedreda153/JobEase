@@ -44,9 +44,14 @@ nav ul li {
     color: #ceeafb;
     transition: color 0.5s ease-in-out;
 }
+
 .link:hover {
     font-size: 18px;
     color: #526D82;
+}
+
+.active-link {
+    text-decoration: underline;
 }
 
 .drawer{

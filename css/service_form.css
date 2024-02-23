@@ -47,16 +47,7 @@ form label {
     color: #fff;
 }
 
-form input {
-    width: 70%;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    margin: 1rem 0;
-}
-
-form textarea {
+form input, form textarea {
     width: 70%;
     padding: 0.5rem;
     border-radius: 5px;
@@ -64,6 +55,10 @@ form textarea {
     outline: none;
     resize: none;
     margin: 1rem 0;
+}
+
+form input:focus, form textarea:focus {
+    border: 2px solid #27374D;
 }
 
 input[type="submit"] {
