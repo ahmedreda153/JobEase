@@ -3,23 +3,37 @@ body {
 }
 
 .feedback-form {
-    border: 3px solid #27374d;
+    /* border: 3px solid #27374d; */
     border-radius: 15px;
     width: 70%;
     margin: 3rem auto;
     padding: 20px;
     font-size: 16px;
-    background-color: #DDE6ED;
+    background: hsla(206, 23%, 42%, 1);
+
+    background: linear-gradient(90deg, hsla(206, 23%, 42%, 1) 0%, hsla(203, 21%, 68%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(206, 23%, 42%, 1) 0%, hsla(203, 21%, 68%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(206, 23%, 42%, 1) 0%, hsla(203, 21%, 68%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#526D82", endColorstr="#9DB2BF", GradientType=1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .feedback-form h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     color: #ffffff;
     padding: 25px;
     background-color: #526D82;
     margin-bottom: 1rem;
+}
+
+.feedback-form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
 }
 
 .feedback-form input,
@@ -56,7 +70,7 @@ body {
 }
 
 .feedback-form input[type="submit"] {
-    background-color: #526D82;
+    background-color: #27374D;
     color: #fff;
     padding: 10px;
     cursor: pointer;
@@ -65,11 +79,8 @@ body {
     width: 50%;
     position: relative;
     left: 25%;
+    font-weight: bold;
     transition: background-color 0.8s ease;
-}
-
-.feedback-form input[type="submit"]:hover {
-    background-color: #27374D;
 }
 
 /* Radio button group */
@@ -103,5 +114,5 @@ body {
     .feedback-form {
         width: 90%;
     }
-    
+
 }
